@@ -1,0 +1,19 @@
+footer {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    border-top: 1px solid #E4E8F7;
+
+    span {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.2px;
+        color: #A3ABCC;
+    }
+}

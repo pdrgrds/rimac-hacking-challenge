@@ -1,0 +1,39 @@
+@media(max-width: 760px){ 
+    .container_message {
+        flex-direction: column;
+
+        footer {
+            display: flex;
+        }
+
+        .section_background {
+            width: 100%;
+            .image_content { display: none; }
+            .image_mobile { display: block; }
+        }
+
+        .section_message {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+
+            .content_message {
+                padding: 48px 32px 56px;
+                top: 0;
+                margin-left: 0;
+                position: inherit;
+
+                h3 { 
+                    line-height: 36px;
+                    letter-spacing: -0.6px;
+                    font-size: 28px; 
+                }
+
+                .btn-default {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

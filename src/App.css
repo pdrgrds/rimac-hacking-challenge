@@ -6,9 +6,9 @@
   min-height: 100vh;
   background-color: var(--background-color);
   color: var(--primary-color);
-  font-size: Roboto;
 
-  --max-width-content: 1300px;
+  --max-width-header: 1300px;
+  --max-width-content: 1540px;
   --primary-color: #494F66;
   --secondary-color: #FF1C44;
   --thrid-color: #6769FF;

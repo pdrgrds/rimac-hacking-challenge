@@ -6,7 +6,7 @@ header {
     top: 0;
 
     >div {
-        max-width: var(--max-width-content);
+        max-width: var(--max-width-header);
         padding: 24px 120px;
         justify-content: space-between;
         margin: 0 auto;
@@ -41,5 +41,15 @@ header {
             .text_desk { display: none; }
             .info .text_mobile { display: inline-block; }
         }
+    }
+}
+
+.header_container {
+    height: 72px;
+    background: #ffff;
+    border-bottom: 1px solid #E4E8F7;
+    width: 100%;
+    @media (max-width: 760px) {
+        height: 64px;
     }
 }

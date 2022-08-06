@@ -22,3 +22,9 @@ export default function Header() {
     </header>
   );
 }
+
+export function HeaderContainer(){
+  return(
+    <div className='header_container'/>
+  )
+}
