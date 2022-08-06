@@ -6,13 +6,13 @@ import VehiclePlan from '@/pages/vehiclePlan';
 const Main = (): JSX.Element => {
 
     return(
-        <main>
+        <>
             <Header />
             <Routes>
                 <Route path="/" element={<VehiclePlan />}/>
                 <Route path="*" element={<Navigate to="/" replace /> }/>
             </Routes>
-        </main>
+        </>
     )
 };
 
