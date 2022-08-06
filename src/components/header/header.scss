@@ -1,0 +1,42 @@
+header {
+    background: transparent;
+    width: 100%;
+
+    >div {
+        max-width: var(--max-width-content);
+        padding: 24px 120px;
+        justify-content: space-between;
+        margin: 0 auto;
+        display: flex;
+
+        .info {
+            a {
+                font-style: normal;
+                font-weight: 400;
+                color: #676F8F;
+            }
+            img { 
+                margin-bottom: -5px;
+            }
+            .info_suggestion {
+                font-size: 12px;
+                line-height: 20px;
+            }
+            .info_phone {
+                font-size: 14px;
+                line-height: 24px;
+                margin-left: 41px;
+                color: #6F7DFF;
+
+            }
+            .text_mobile { display: none }
+        }
+
+        @media (max-width: 760px) {
+            padding: 20px 30px;
+
+            .text_desk { display: none; }
+            .info .text_mobile { display: inline-block; }
+        }
+    }
+}
