@@ -1,0 +1,154 @@
+.content_priceInformation {
+
+    p {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: var(--primary-color);
+    }
+
+    h1 {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -0.2px;
+        color: var(--primary-color);
+    }
+
+    span {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #676F8F;
+    }
+
+    hr {
+        border: 1px solid #E4E8F7;
+        margin: 19px 0 24px 0;
+    }
+
+    .plans {
+        h2 {
+            font-family: 'Lato';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            color: #494F66;
+        }
+
+        ul li {
+            list-style: none;
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 14px;
+            color: #676F8F;
+        }
+
+        li:before {
+            content: "✓";
+            display: inline-block;
+            margin-left: -1.3em;
+            width: 1.3em;
+        }
+    }
+
+    button {
+        height: 48px;
+        width: 224px;
+    }
+}
+
+.links {
+    width: min-content;            
+    align-items: center;
+    margin-bottom: 24px;
+    display: flex;
+    cursor: pointer;
+
+    .circle {
+        border: 1px solid #FC606B;
+        padding: 3px 8px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        margin-right: 16px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 16px;
+        text-align: center;
+        color: #FC606B;
+    }
+
+    span {
+        color: #A3ABCC;
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+.greeting  {
+    margin-bottom: 44px;
+
+    h3 {
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -0.6px;
+        color: var(--primary-color);
+        margin: 0;
+
+        >span {
+            color: var(--secondary-color);
+        }
+    }
+
+    p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #676F8F;
+    }
+}
+
+.licensePlate {
+    border: 3px solid #F0F2FA; 
+    border-radius: 15px;
+    height: 172px;
+    position: relative;
+
+    p {
+        margin-top: 40px;
+        margin-left: 32px;
+        width: 200px;
+
+        font-family: 'Lato';
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--primary-color);
+
+        span {
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+            color: #A3ABCC;
+            display: block;
+        }
+    }
+    img {
+        position: absolute;
+        right: 20px;
+        top: 0;
+    }
+}

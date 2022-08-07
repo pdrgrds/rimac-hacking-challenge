@@ -1,0 +1,110 @@
+.coverage {
+    h1 {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: #494F66;
+        margin: 55px 0 32px;
+    }
+    
+    min-height: 500px;
+    .coverage_list_header {
+        display: flex;
+    }
+
+    .header_item {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        width: 128px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #E4E8F7;
+        cursor: pointer;
+        
+        p {
+            color: #494F66;
+            width: 90px;
+            font-family: 'Lato';
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 16px;
+        }
+    }
+
+    .header_item--active {
+        border-bottom: 2px solid #EF3340;
+        p { color: #EF3340; }
+    }
+
+    .body_item {
+        margin: 35px 0 32px;
+
+        .body_item_title {
+            display: flex;
+        }
+        .body_item_desc {
+            h1 { margin: 0; }
+
+            .asigned {
+                display: flex;
+                align-items: center;
+                margin-top: 12px;
+                cursor: pointer;
+
+                div {
+                    border: 1px solid #939DFF;
+                    border-radius: 50%;
+                    box-sizing: border-box;
+                    margin-right: 12px;
+                    font-size: 18px;
+                    line-height: 16px;
+                    text-align: center;
+                    color: #6F7DFF;
+
+                    width: 26px;
+                    height: 26px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                p {
+                    font-family: 'Lato';
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 0.6px;
+                    text-transform: uppercase;
+                    color: #6F7DFF;
+                }
+            }
+        }
+        .body_item_arrows {
+            margin-left: auto;
+            img {
+                cursor: pointer;
+            }
+        }
+        .body_item_icon {
+            margin-right: 24px;
+        }
+
+        .body_item_content {
+            margin-top: 16px;
+            margin-left: 72px;
+
+            p {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: #676F8F;
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 
-const stepDefaultFocus = 3
+const stepDefaultFocus = 1
 
 export const StepContext = createContext({
     step: stepDefaultFocus,

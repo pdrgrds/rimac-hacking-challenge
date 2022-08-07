@@ -1,0 +1,105 @@
+@media(max-width: 760px){
+    .container_buildPlan {
+        flex-direction: column;
+
+        .section_steps {
+            width: 100%;
+
+            .list_step {
+                display: flex;
+                padding: 20px 32px;
+
+                .step_item  {
+                    margin-bottom: 0;
+                    margin-right: 40px;
+
+                    .line { display: none; }
+                }
+            }
+        }
+
+        .section_content {
+            width: 100%;
+            margin-top: 0;
+            position: relative;
+
+            .content_buildPlan {
+                margin-left: 0;
+
+                .links { display: none; }
+                .group_mobile {
+                    padding-bottom: 56px;
+                    background: #FAFBFF;
+                    .greeting { 
+                        padding-bottom: 24px; 
+                        padding-top: 40px; 
+                        width: 302px;
+                        margin: 0 auto;
+
+                        h3 { font-size: 28px; }
+                        p { font-size: 16px; }
+                    }
+                    .licensePlate { 
+                        width: 296px; 
+                        height: 148px;
+                        margin: 0 auto; 
+
+                        p {
+                            font-size: 16px;
+                            width: 150px;
+                            span { font-size: 12px; }
+                        }
+
+                        img {
+                            height: 110%;
+                            top: -13px;
+                            right: 6px;
+                        }
+                    }
+
+                }
+                .insurancePrice {
+                    flex-direction: column;
+                    padding: 0 32px;
+
+                    div { width: 100%; }
+                    .btn_price{ margin-top: 16px }
+                }
+                .coverage {
+                    h1 {
+                        padding: 0 32px;
+                    }
+                    .coverage_list_body {
+                        padding: 0 32px;
+                    }
+                    .body_item {
+                        .body_item_title {
+                            .body_item_desc h1 {
+                                padding: 0;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content_priceInformation {
+                margin-top: 0;
+                margin-left: 0;
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                left: 0;
+                width: 100%;
+                height: 76px;
+                justify-content: space-evenly;
+                align-items: center;
+                border-top: 1px solid #E4E8F7;
+
+                button { margin-top: 0; width: 168px; }
+                p, .plans, hr { display: none; }
+            }
+            
+        }
+    }
+}

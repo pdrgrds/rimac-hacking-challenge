@@ -81,7 +81,7 @@
         left: 224px;
 
         h2 {
-            color: #494F66;
+            color: var(--primary-color);
             font-family: 'Lato';
             font-style: normal;
             font-weight: 400;
@@ -103,7 +103,7 @@
                 border: 1px solid #C5CBE0;
                 background: transparent;
                 border-radius: 4px;
-                color: #494F66;
+                color: var(--primary-color);
             }
 
             input::placeholder, select::placeholder {

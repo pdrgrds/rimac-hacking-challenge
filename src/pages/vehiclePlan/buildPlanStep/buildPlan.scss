@@ -1,0 +1,92 @@
+.container_buildPlan {
+    display: flex;
+    min-height: calc(100vh - 73px);
+}
+
+.container_buildPlan .section_steps {
+    background: #F7F8FC;
+    min-height: auto;
+    width: 408px;
+
+    .list_step {
+        padding: 52px 0 0 120px;
+
+        .step_item  {
+            display: flex;
+            align-items: center;
+            font-family: 'Lato';
+            font-style: normal;
+            margin-bottom: 44px;
+            position: relative;
+            cursor: pointer;
+
+            .circle {
+                padding: 4px 8px;
+                border-radius: 50%;
+                border: 1px solid #C5CBE0;
+                box-sizing: border-box;
+                margin-right: 16px;
+                
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 16px;
+
+                text-align: center;
+                letter-spacing: 0.6px;
+                color: #C5CBE0;
+            }
+            >label {
+                color: #A3ABCC;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+            }
+        }
+
+        .line {
+            box-sizing: border-box;
+            border: 1px dashed #E4E8F7;
+            transform: rotate(-90deg);
+            position: absolute;
+            left: -9px;
+            bottom: -23px;
+            width: 44px;
+        }
+
+        .step_item--active {
+
+            .circle { 
+                border: 1px solid #6F7DFF;
+                background: #6F7DFF; 
+                color: white;
+            }
+            label { color: var(--primary-color); }
+        }
+    }
+}
+
+.container_buildPlan .section_content {
+    width: calc(100% - 408px);
+    margin-top: 48px;
+    display: flex;
+
+    .content_buildPlan {
+        margin-left: 96px;
+        margin-bottom: 150px;
+        height: 100%;
+        width: 384px;
+
+        hr {
+            border: 1px solid #E4E8F7; 
+        }
+    }
+
+    .content_priceInformation {
+        margin-top: calc(189px - 48px);
+        font-family: 'Lato';
+        width: 224px;
+        height: 300px;
+        margin-left: 96px;
+    }
+}

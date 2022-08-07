@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { UserContext } from '@/context/userContext';
+import { UserContext } from '@/context/UserContext';
 import { StepContext } from '@/context/StepContext';
 
 interface IDataForm{
@@ -25,7 +25,7 @@ export default function SectionForm() {
   const [dataForm, setDataForm] = useState<IDataForm>(initialValueDataForm); 
   const [loadingSubmit, setLoadingSubmit] = useState(false); 
   const [error, setError] = useState(false); 
-  const { user, setUser } = useContext(UserContext);
+  const { setUser } = useContext(UserContext);
   const { setStep } = useContext(StepContext);
 
   const onChange = (data:object) =>
@@ -46,7 +46,7 @@ export default function SectionForm() {
     .then((response) => response.json())
     .then((userData) => {
       if(userData.length === 0) return;
-      setUser(userData);
+      setUser({...userData, placa: dataForm.placa});
       setStep(2);
     })
   }
@@ -92,7 +92,7 @@ export default function SectionForm() {
                     <option value='dni'>DNI</option>
                     <option value='asd'>otro</option>
                 </select>
-                <input type='text' placeholder='Nro. de doc' value={dataForm.doc} onChange={(e) => onChange({doc: e.target.value})}/>
+                <input type='number' min={1} max={10} placeholder='Nro. de doc' value={dataForm.doc} onChange={(e) => onChange({doc: e.target.value})}/>
             </div>
             <input type='tel' placeholder='Celular' value={dataForm.telf} onChange={(e) => onChange({telf: e.target.value})}/>
             <input type='text' placeholder='Placa' value={dataForm.placa} onChange={(e) => onChange({placa: e.target.value})}/>

@@ -1,0 +1,60 @@
+.insurancePrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 55px 0 43px;
+
+    .info_text {
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #494F66;
+    }
+
+    span {
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        color: #676F8F;
+
+    }
+
+    .btn_price{
+        width: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #C5CBE0;
+        border-radius: 15px;
+
+        span {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: #494F66;
+        }
+
+        button {
+            margin-top: 0;
+            width: 40px;
+            background: transparent;
+            color: #6F7DFF;
+            font-size: 20px;
+        }
+
+        button:disabled,
+        button[disabled]{
+            color: #7f83a5;
+        }
+        
+    }
+}
